@@ -3,11 +3,12 @@
 
 namespace App\Http\Responses;
 
-use Illuminate\Http\Request;
-use Illuminate\Http\JsonResponse;
 use Illuminate\Contracts\Support\Responsable;
+use Illuminate\Http\JsonResponse;
+use Illuminate\Http\Request;
+use Symfony\Component\HttpFoundation\Response;
 
-class SuccessResponse implements Responsable
+class ErrorResponse implements Responsable
 {
     /**
      * Message instance.
@@ -17,17 +18,17 @@ class SuccessResponse implements Responsable
     protected $message;
 
     /**
-     * SuccessResponse constructor.
+     * ErrorResponse constructor.
      *
      * @param $message
      */
     public function __construct(string $message)
     {
-        $this->message = $message ?? 'OK';
+        $this->message = $message ?? 'Something went wrong';
     }
 
     /**
-     * Success Response.
+     * Error Response.
      *
      * @param Request $request
      *
@@ -37,6 +38,6 @@ class SuccessResponse implements Responsable
     {
         return response()->json([
             'message' => $this->message
-        ], 200);
+        ], 422);
     }
 }

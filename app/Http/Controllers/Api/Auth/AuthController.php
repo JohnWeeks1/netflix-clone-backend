@@ -6,8 +6,9 @@ use App\Services\MailService;
 use Illuminate\Http\JsonResponse;
 use App\Services\User\UserService;
 use App\Http\Controllers\Controller;
+use App\Http\Responses\SuccessResponse;
 use App\Http\Requests\Auth\LoginRequest;
-use App\Http\Requests\User\RegisterRequest;
+use App\Http\Requests\Auth\RegisterRequest;
 
 class AuthController extends Controller
 {
@@ -61,22 +62,18 @@ class AuthController extends Controller
      *
      * @param RegisterRequest $request
      *
-     * @return JsonResponse
+     * @return SuccessResponse
      */
-    public function register(RegisterRequest $request): JsonResponse
+    public function register(RegisterRequest $request): SuccessResponse
     {
-        // Create new user
         $user = $this->userService->createUser($request);
-        // Send email to new registered user.
         $this->mailService->welcomeNewUser($user);
 
-        return response()->json(['message' => 'User created'], 200);
+        return new SuccessResponse('User created!');
     }
 
     /**
      * Logout user.
-     *
-     * @return void
      */
     public function logout(): void
     {

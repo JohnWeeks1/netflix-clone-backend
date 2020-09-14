@@ -11,6 +11,8 @@ use App\Http\Requests\User\UpdateUserRequest;
 class UserController extends Controller
 {
     /**
+     * User service instance.
+     *
      * @var UserService
      */
     protected $userService;
