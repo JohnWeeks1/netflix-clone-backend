@@ -24,6 +24,13 @@ Route::post('/logout', [\App\Http\Controllers\Api\Auth\AuthController::class, 'l
     ->name('api.auth.logout');
 
 Route::middleware('auth:sanctum')->group(function () {
+
     Route::get('/user', [\App\Http\Controllers\Api\User\UserController::class, 'index'])
-        ->name('api.users.index');
+        ->name('api.user.index');
+
+    Route::get('/movies', [\App\Http\Controllers\Api\Movie\MovieController::class, 'index'])
+        ->name('api.movie.index');
+
+    Route::get('/categories', [\App\Http\Controllers\Api\Category\CategoryController::class, 'index'])
+        ->name('api.category.index');
 });
