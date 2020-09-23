@@ -2,6 +2,7 @@
 
 namespace App\Http\Resources\Movie;
 
+use App\Http\Resources\Category\CategoryIndex;
 use Illuminate\Http\Resources\Json\ResourceCollection;
 
 class MoviesCollection extends ResourceCollection
@@ -19,7 +20,7 @@ class MoviesCollection extends ResourceCollection
                 return [
                     'id' => $movie->id,
                     'title' => $movie->title,
-                    'category' => $movie->category->pluck('name')
+                    'category' => new CategoryIndex($movie->category)
                 ];
             })
         ];

@@ -19,6 +19,7 @@ class UserService
     {
         $user = new User;
 
+        $user->isSubscribed = 0;
         $user->firstname = $request->get('firstname');
         $user->lastname = $request->get('lastname');
         $user->email = $request->get('email');

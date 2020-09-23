@@ -12,7 +12,7 @@ class MoviesTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('movies')->insert([
+        \App\Movie::create([
             'category_id' => 1,
             'title' => 'beach',
             'description' => 'This is a movie about the beach.',
@@ -20,7 +20,7 @@ class MoviesTableSeeder extends Seeder
             'updated_at' => now(),
         ]);
 
-        DB::table('movies')->insert([
+        \App\Movie::create([
             'category_id' => 1,
             'title' => 'city',
             'description' => 'This is a movie about the city.',
@@ -28,7 +28,7 @@ class MoviesTableSeeder extends Seeder
             'updated_at' => now(),
         ]);
 
-        DB::table('movies')->insert([
+        \App\Movie::create([
             'category_id' => 1,
             'title' => 'fish',
             'description' => 'This is a movie about the fish.',
@@ -36,7 +36,7 @@ class MoviesTableSeeder extends Seeder
             'updated_at' => now(),
         ]);
 
-        DB::table('movies')->insert([
+        \App\Movie::create([
             'category_id' => 1,
             'title' => 'mars',
             'description' => 'This is a movie about the mars.',
@@ -44,7 +44,7 @@ class MoviesTableSeeder extends Seeder
             'updated_at' => now(),
         ]);
 
-        DB::table('movies')->insert([
+        \App\Movie::create([
             'category_id' => 1,
             'title' => 'road',
             'description' => 'This is a movie about the road.',
@@ -52,7 +52,7 @@ class MoviesTableSeeder extends Seeder
             'updated_at' => now(),
         ]);
 
-        DB::table('movies')->insert([
+        \App\Movie::create([
             'category_id' => 1,
             'title' => 'water',
             'description' => 'This is a movie about the water.',

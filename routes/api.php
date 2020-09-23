@@ -31,6 +31,19 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::get('/movies', [\App\Http\Controllers\Api\Movie\MovieController::class, 'index'])
         ->name('api.movie.index');
 
+    Route::get('/movies/{id}', [\App\Http\Controllers\Api\Movie\MovieController::class, 'show'])
+        ->name('api.movie.show');
+
     Route::get('/categories', [\App\Http\Controllers\Api\Category\CategoryController::class, 'index'])
         ->name('api.category.index');
+
+    Route::get('/categories', [\App\Http\Controllers\Api\Category\CategoryController::class, 'index'])
+        ->name('api.category.index');
+
+    Route::get('/payment/setup-intent', [\App\Http\Controllers\Api\Payment\PaymentController::class, 'index'])
+        ->name('api.payment.index');
+
+    Route::post('/payment/store', [\App\Http\Controllers\Api\Payment\PaymentController::class, 'store'])
+        ->name('api.payment.store');
+
 });
