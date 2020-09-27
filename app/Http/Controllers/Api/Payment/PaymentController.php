@@ -20,7 +20,7 @@ class PaymentController extends Controller
     {
         $user = $request->user();
         $paymentMethod = $request->payment_method;
-        $plan = Plan::find(env('DEFAULT_PLAN_ID'));
+        $plan = Plan::findOrFail(env('DEFAULT_PLAN_ID'));
 
         $user->newSubscription(
             'default',

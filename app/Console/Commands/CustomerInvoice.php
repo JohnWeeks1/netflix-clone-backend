@@ -39,10 +39,10 @@ class CustomerInvoice extends Command
      */
     public function handle()
     {
-        $user = User::find(
-            $this->argument('user_id')
-        );
+//        $user = User::find(
+//            $this->argument('user_id')
+//        );
 
-        $this->info('The invoice was sent');
+        $this->info('The invoice was sent.');
     }
 }
