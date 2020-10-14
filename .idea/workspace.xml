@@ -3,8 +3,33 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6429208-31f0-48f3-9c3e-488f536dec9f" name="Default Changelist" comment="" />
+    <list default="true" id="c6429208-31f0-48f3-9c3e-488f536dec9f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/docker/nginx/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/netflix-clone-backend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/netflix-clone-backend.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +38,9 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -119,6 +147,16 @@
       <path value="$PROJECT_DIR$/vendor/sebastian/type" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
       <path value="$PROJECT_DIR$/vendor/laravel/sanctum" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-icu" />
+      <path value="$PROJECT_DIR$/vendor/symfony/intl" />
+      <path value="$PROJECT_DIR$/vendor/moneyphp/money" />
+      <path value="$PROJECT_DIR$/vendor/sabberworm/php-css-parser" />
+      <path value="$PROJECT_DIR$/vendor/phenx/php-svg-lib" />
+      <path value="$PROJECT_DIR$/vendor/phenx/php-font-lib" />
+      <path value="$PROJECT_DIR$/vendor/dompdf/dompdf" />
+      <path value="$PROJECT_DIR$/vendor/stripe/stripe-php" />
+      <path value="$PROJECT_DIR$/vendor/laravel/cashier" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-client-contracts" />
     </include_path>
   </component>
   <component name="ProjectId" id="1hW7vVXMc934GgLSbTKH9opyuDm" />
@@ -130,20 +168,23 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Responses" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/Http/Responses" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/Http/Responses" />
       <recent name="$PROJECT_DIR$/app/Http/Requests/Auth" />
       <recent name="$PROJECT_DIR$/resources/views" />
       <recent name="$PROJECT_DIR$/app" />
       <recent name="$PROJECT_DIR$/app/Http" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/docker/nginx" />
+      <recent name="$PROJECT_DIR$/app/Http/Responses" />
     </key>
   </component>
   <component name="RunManager">
@@ -162,13 +203,29 @@
       <updated>1600115225297</updated>
       <workItem from="1600115226552" duration="1256000" />
       <workItem from="1600116953476" duration="8394000" />
+      <workItem from="1602704459680" duration="8596000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
+    <state x="2479" y="501" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602709406925">
+      <screen x="1440" y="23" width="2560" height="1337" />
+    </state>
+    <state x="2479" y="501" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.877/1440.23.2560.1337@1440.23.2560.1337" timestamp="1602709406925" />
     <state x="216" y="150" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1600119683930">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
@@ -181,6 +238,14 @@
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="145" y="268" key="NewPhpClassDialog/0.23.1920.1057@0.23.1920.1057" timestamp="1600119291866" />
+    <state x="1856" y="329" key="SettingsEditor" timestamp="1602704711522">
+      <screen x="1440" y="23" width="2560" height="1337" />
+    </state>
+    <state x="1856" y="329" key="SettingsEditor/0.23.1440.877/1440.23.2560.1337@1440.23.2560.1337" timestamp="1602704711522" />
+    <state x="2427" y="324" width="586" height="735" key="find.popup" timestamp="1602710941549">
+      <screen x="1440" y="23" width="2560" height="1337" />
+    </state>
+    <state x="2427" y="324" width="586" height="735" key="find.popup/0.23.1440.877/1440.23.2560.1337@1440.23.2560.1337" timestamp="1602710941549" />
     <state x="146" y="258" width="670" height="676" key="search.everywhere.popup" timestamp="1600118742211">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
