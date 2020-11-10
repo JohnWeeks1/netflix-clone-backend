@@ -2,7 +2,7 @@
 
 namespace App\Services;
 
-use App\Jobs\User\WelcomeNewUserJob;
+use App\Jobs\user\UserWelcomeEmail;
 
 class MailService
 {
@@ -15,7 +15,7 @@ class MailService
      */
     public function welcomeNewUser($user): void
     {
-        dispatch(new WelcomeNewUserJob($user))
-            ->delay(now()->addSeconds(10));
+        dispatch(new UserWelcomeEmail($user))
+            ->delay(now()->addSeconds(2));
     }
 }

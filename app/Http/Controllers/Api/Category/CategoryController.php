@@ -8,7 +8,12 @@ use App\Http\Resources\Category\CategoriesCollection;
 
 class CategoryController extends Controller
 {
-    public function index()
+    /**
+     * Return all categories.
+     *
+     * @return CategoriesCollection
+     */
+    public function index(): CategoriesCollection
     {
         return new CategoriesCollection(Category::all());
     }

@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\Api\Auth;
 
 use App\Services\MailService;
-use Illuminate\Http\JsonResponse;
 use App\Services\User\UserService;
 use App\Http\Controllers\Controller;
 use App\Http\Responses\SuccessResponse;
@@ -45,16 +44,18 @@ class AuthController extends Controller
      *
      * @param LoginRequest $request
      *
-     * @return JsonResponse
+     * @return SuccessResponse
+     *
+     * @throws \Exception
      */
-    public function login(LoginRequest $request): JsonResponse
+    public function login(LoginRequest $request): SuccessResponse
     {
         // Get email and password and see if valid
         if(!auth()->attempt($request->only(['email', 'password']))) {
-            return response()->json(['message' => 'Unauthorized'], 500);
+            throw new \Exception("User not found!");
         }
 
-        return response()->json(['message' => 'Success'], 200);
+        return new SuccessResponse('User logged in');
     }
 
     /**
@@ -74,6 +75,8 @@ class AuthController extends Controller
 
     /**
      * Logout user.
+     *
+     * @return void
      */
     public function logout(): void
     {

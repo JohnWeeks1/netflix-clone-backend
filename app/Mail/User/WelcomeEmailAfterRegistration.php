@@ -11,10 +11,16 @@ class WelcomeEmailAfterRegistration extends Mailable
 {
     use Queueable, SerializesModels;
 
+    /**
+     * User Details.
+     *
+     * @var $user
+     */
     public $user;
 
     /**
      * WelcomeAfterRegistration constructor.
+     *
      * @param $user
      */
     public function __construct($user)

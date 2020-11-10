@@ -18,8 +18,8 @@ class MoviesCollection extends ResourceCollection
         return [
             'data' => $this->collection->transform(function($movie) {
                 return [
-                    'id' => $movie->id,
-                    'title' => $movie->title,
+                    'id'       => $movie->id,
+                    'title'    => $movie->title,
                     'category' => new CategoryIndex($movie->category)
                 ];
             })

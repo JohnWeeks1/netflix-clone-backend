@@ -17,7 +17,7 @@ class CategoriesCollection extends ResourceCollection
         return [
             'data' => $this->collection->transform(function($category) {
                 return [
-                    'id' => $category->id,
+                    'id'   => $category->id,
                     'name' => $category->name,
                 ];
             })
