@@ -24,16 +24,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c6429208-31f0-48f3-9c3e-488f536dec9f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/Auth/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/Auth/AuthController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/Category/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/Category/CategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/Category/CategoriesCollection.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/Category/CategoriesCollection.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/Category/CategoryIndex.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/Category/CategoryIndex.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/Movie/MovieShow.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/Movie/MovieShow.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/Movie/MoviesCollection.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/Movie/MoviesCollection.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Jobs/User/WelcomeNewUserJob.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Mail/User/WelcomeEmailAfterRegistration.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Mail/User/WelcomeEmailAfterRegistration.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Jobs/user/UserWelcomeEmail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Jobs/User/UserWelcomeEmail.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Services/MailService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/MailService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/cors.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/cors.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -216,7 +208,7 @@
       <workItem from="1604834215625" duration="5492000" />
       <workItem from="1604948681466" duration="4255000" />
       <workItem from="1605029378334" duration="6560000" />
-      <workItem from="1605045426709" duration="4337000" />
+      <workItem from="1605045426709" duration="4581000" />
     </task>
     <servers />
   </component>

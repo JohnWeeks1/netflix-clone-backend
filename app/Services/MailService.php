@@ -2,7 +2,7 @@
 
 namespace App\Services;
 
-use App\Jobs\user\UserWelcomeEmail;
+use App\Jobs\User\UserWelcomeEmail;
 
 class MailService
 {

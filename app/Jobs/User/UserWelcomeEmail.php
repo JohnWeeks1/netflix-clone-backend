@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Jobs\user;
+namespace App\Jobs\User;
 
 use App\Mail\User\WelcomeEmailAfterRegistration;
 use Illuminate\Bus\Queueable;
