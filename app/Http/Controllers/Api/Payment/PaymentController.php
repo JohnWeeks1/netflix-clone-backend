@@ -24,6 +24,7 @@ class PaymentController extends Controller
      * Setup and store payment.
      *
      * @param Request $request
+     *
      * @return SuccessResponse
      */
     public function store(Request $request): SuccessResponse
