@@ -16,7 +16,7 @@ class UserMovieRatingController extends Controller
      *
      * @return SuccessResponse
      */
-    public function create(Request $request)
+    public function create(Request $request): SuccessResponse
     {
         $rating = new Rating();
 
