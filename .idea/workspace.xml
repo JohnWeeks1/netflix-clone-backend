@@ -23,8 +23,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c6429208-31f0-48f3-9c3e-488f536dec9f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/Rating/UserMovieRatingController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Resources/Rating/RatingShow.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Jobs/User/UserWelcomeEmail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Jobs/User/UserWelcomeEmail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/ib_logfile0" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/ib_logfile0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/ibdata1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/ibtmp1" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/ibtmp1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,23 +170,25 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Resources" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Http/Resources" />
+      <recent name="$PROJECT_DIR$/app/Http/Controllers/Api" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/docker/nginx" />
+      <recent name="$PROJECT_DIR$/app/Http/Responses" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/Http/Responses" />
       <recent name="$PROJECT_DIR$/app/Http/Requests/Auth" />
       <recent name="$PROJECT_DIR$/resources/views" />
       <recent name="$PROJECT_DIR$/app" />
       <recent name="$PROJECT_DIR$/app/Http" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/docker/nginx" />
-      <recent name="$PROJECT_DIR$/app/Http/Responses" />
     </key>
   </component>
   <component name="RunManager">
@@ -207,7 +215,8 @@
       <workItem from="1604834215625" duration="5492000" />
       <workItem from="1604948681466" duration="4255000" />
       <workItem from="1605029378334" duration="6560000" />
-      <workItem from="1605045426709" duration="4811000" />
+      <workItem from="1605045426709" duration="6402000" />
+      <workItem from="1605116191719" duration="6641000" />
     </task>
     <servers />
   </component>
@@ -231,9 +240,10 @@
       <screen x="1440" y="23" width="2560" height="1337" />
     </state>
     <state x="2479" y="501" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.877/1440.23.2560.1337@1440.23.2560.1337" timestamp="1602709406925" />
-    <state x="216" y="150" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1600119683930">
-      <screen x="0" y="23" width="1920" height="1057" />
+    <state x="1728" y="-309" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1605120913365">
+      <screen x="1440" y="-479" width="2560" height="1417" />
     </state>
+    <state x="1728" y="-309" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1440.797/1440.-479.2560.1417/4000.-381.1920.1057@1440.-479.2560.1417" timestamp="1605120913365" />
     <state x="216" y="150" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1920.1057@0.23.1920.1057" timestamp="1600119683930" />
     <state x="1732" y="-90" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605050123554">
       <screen x="1440" y="-479" width="2560" height="1417" />
@@ -254,10 +264,10 @@
     <state x="2427" y="-160" width="586" height="779" key="find.popup/0.23.1440.797/1440.-479.2560.1417/4000.-381.1920.1057@1440.-479.2560.1417" timestamp="1605046950600" />
     <state x="2427" y="-290" width="586" height="779" key="find.popup/0.23.1440.797/1440.-609.2560.1417@1440.-609.2560.1417" timestamp="1602788201477" />
     <state x="2427" y="324" width="586" height="735" key="find.popup/0.23.1440.877/1440.23.2560.1337@1440.23.2560.1337" timestamp="1602710941549" />
-    <state x="1635" y="-164" width="894" height="907" key="search.everywhere.popup" timestamp="1605045827001">
+    <state x="1635" y="-164" width="894" height="907" key="search.everywhere.popup" timestamp="1605124551358">
       <screen x="1440" y="-479" width="2560" height="1417" />
     </state>
-    <state x="1635" y="-164" width="894" height="907" key="search.everywhere.popup/0.23.1440.797/1440.-479.2560.1417/4000.-381.1920.1057@1440.-479.2560.1417" timestamp="1605045827001" />
+    <state x="1635" y="-164" width="894" height="907" key="search.everywhere.popup/0.23.1440.797/1440.-479.2560.1417/4000.-381.1920.1057@1440.-479.2560.1417" timestamp="1605124551358" />
     <state x="1635" y="-294" width="894" height="907" key="search.everywhere.popup/0.23.1440.797/1440.-609.2560.1417@1440.-609.2560.1417" timestamp="1602783155888" />
     <state x="1635" y="-182" width="894" height="856" key="search.everywhere.popup/0.23.1440.877/1440.-479.2560.1337/4000.-381.1920.1057@1440.-479.2560.1337" timestamp="1604966302729" />
     <state x="146" y="258" width="670" height="676" key="search.everywhere.popup/0.23.1920.1057@0.23.1920.1057" timestamp="1600118742211" />
