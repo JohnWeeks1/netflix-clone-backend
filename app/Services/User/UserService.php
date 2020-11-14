@@ -25,7 +25,11 @@ class UserService
         $user->email = $request->get('email');
         $user->password = Hash::make($request->get('password'));
 
-        $user->save();
+        $saved = $user->save();
+
+        if (!$saved) {
+            abort(500, 'Error saving user');
+        }
 
         return $user;
     }
@@ -43,6 +47,10 @@ class UserService
         $user->firstname = $request->get('firstname');
         $user->lastname = $request->get('lastname');
 
-        $user->save();
+        $saved = $user->save();
+
+        if (!$saved) {
+            abort(500, 'Error updating user');
+        }
     }
 }

@@ -328,7 +328,7 @@
                     <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
                         <tr>
                             <td class="logo" style="text-align: center;">
-                                <h1><a href="#">Agency</a></h1>
+                                <h1><a href="#">JohnFlix</a></h1>
                             </td>
                         </tr>
                     </table>
@@ -375,64 +375,6 @@
                                                         <div class="text-project" style="text-align: center;">
                                                             <h3><a href="#">Work name</a></h3>
                                                             <span>Printing</span>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td style="padding-top: 20px; padding-right: 10px;">
-                                                        <a href="#"><img src="images/work-3.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;"></a>
-                                                        <div class="text-project" style="text-align: center;">
-                                                            <h3><a href="#">Work</a></h3>
-                                                            <span>Printing</span>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td style="padding-top: 20px; padding-right: 10px;">
-                                                        <a href="#"><img src="images/work-4.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;"></a>
-                                                        <div class="text-project" style="text-align: center;">
-                                                            <h3><a href="#">Work</a></h3>
-                                                            <span>Printing</span>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                        <td valign="top" width="50%">
-                                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                                                <tr>
-                                                    <td style="padding-top: 20px; padding-left: 10px;">
-                                                        <a href="#"><img src="images/work-5.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;"></a>
-                                                        <div class="text-project" style="text-align: center;">
-                                                            <h3><a href="#">Work name</a></h3>
-                                                            <span>Branding</span>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td style="padding-top: 20px; padding-left: 10px;">
-                                                        <a href="#"><img src="images/work-6.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;"></a>
-                                                        <div class="text-project" style="text-align: center;">
-                                                            <h3><a href="#">Work name</a></h3>
-                                                            <span>Branding</span>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td style="padding-top: 20px; padding-left: 10px;">
-                                                        <a href="#"><img src="images/work-7.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;"></a>
-                                                        <div class="text-project" style="text-align: center;">
-                                                            <h3><a href="#">Work name</a></h3>
-                                                            <span>Branding</span>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td style="padding-top: 20px; padding-left: 10px;">
-                                                        <a href="#"><img src="images/work-8.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;"></a>
-                                                        <div class="text-project" style="text-align: center;">
-                                                            <h3><a href="#">Work name</a></h3>
-                                                            <span>Branding</span>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -525,12 +467,5 @@
 </center>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13" type="6769734451c46d196f511b47-text/javascript"></script>
-<script type="6769734451c46d196f511b47-text/javascript">
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-23581568-13');
-</script>
 <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="6769734451c46d196f511b47-|49" defer=""></script></body>
 </html>

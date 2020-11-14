@@ -2,20 +2,22 @@
 
 namespace App\Services;
 
-use App\Jobs\User\UserWelcomeEmail;
+use App\User;
+use App\Jobs\User\UserWelcomeEmailJob;
 
 class MailService
 {
     /**
      * Dispatch welcome email to user.
      *
-     * @param $user
+     * @param User $user
      *
      * @return void
      */
-    public function welcomeNewUser($user): void
+    public function welcomeNewUser(User $user): void
     {
-        dispatch(new UserWelcomeEmail($user))
-            ->delay(now()->addSeconds(2));
+        dispatch(new UserWelcomeEmailJob($user))
+            ->onQueue('emails')
+            ->delay(now()->addSeconds(5));
     }
 }

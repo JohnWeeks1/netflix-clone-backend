@@ -23,8 +23,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c6429208-31f0-48f3-9c3e-488f536dec9f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/UserMovieRating/UserMovieRatingCreateRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/UserMovieRating/UserMovieRatingUpdateRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Jobs/User/UserInvoiceSendJob.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Mail/User/UserInvoiceEmail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Notifications/Slack/UserRegisteredSlackNotification.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/netflix-clone-backend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/netflix-clone-backend.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Commands/CustomerInvoice.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/UserInvoice.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/Auth/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/Auth/AuthController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/Payment/PaymentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/Payment/PaymentController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/Rating/UserMovieRatingController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/Rating/UserMovieRatingController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Resources/Payment/PaymentIndex.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/Payment/PaymentIndex.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Jobs/User/UserWelcomeEmail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Jobs/User/UserWelcomeEmailJob.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Mail/User/WelcomeEmailAfterRegistration.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Mail/User/WelcomeEmailAfterRegistration.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/MailService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/MailService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/User/UserService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/User/UserService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/queue.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/queue.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/ib_logfile0" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/ib_logfile0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/ibdata1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/ibtmp1" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/ibtmp1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/emails/user/user_invoice.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/emails/user/user_invoice.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/emails/user/welcome_email_after_registration.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/emails/user/welcome_email_after_registration.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,6 +180,7 @@
       <path value="$PROJECT_DIR$/vendor/stripe/stripe-php" />
       <path value="$PROJECT_DIR$/vendor/laravel/cashier" />
       <path value="$PROJECT_DIR$/vendor/symfony/http-client-contracts" />
+      <path value="$PROJECT_DIR$/vendor/laravel/slack-notification-channel" />
     </include_path>
   </component>
   <component name="ProjectId" id="1hW7vVXMc934GgLSbTKH9opyuDm" />
@@ -164,25 +192,25 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Requests/UserMovieRating" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Http/Requests/UserMovieRating" />
       <recent name="$PROJECT_DIR$/app/Http/Resources" />
       <recent name="$PROJECT_DIR$/app/Http/Controllers/Api" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/docker/nginx" />
-      <recent name="$PROJECT_DIR$/app/Http/Responses" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Jobs/User" />
+      <recent name="$PROJECT_DIR$/app/Notifications/Slack" />
       <recent name="$PROJECT_DIR$/app/Http/Responses" />
       <recent name="$PROJECT_DIR$/app/Http/Requests/Auth" />
       <recent name="$PROJECT_DIR$/resources/views" />
-      <recent name="$PROJECT_DIR$/app" />
-      <recent name="$PROJECT_DIR$/app/Http" />
     </key>
   </component>
   <component name="RunManager">
@@ -210,7 +238,10 @@
       <workItem from="1604948681466" duration="4255000" />
       <workItem from="1605029378334" duration="6560000" />
       <workItem from="1605045426709" duration="6402000" />
-      <workItem from="1605116191719" duration="7490000" />
+      <workItem from="1605116191719" duration="7897000" />
+      <workItem from="1605202108655" duration="3186000" />
+      <workItem from="1605292704825" duration="2307000" />
+      <workItem from="1605358016199" duration="20240000" />
     </task>
     <servers />
   </component>
@@ -234,15 +265,15 @@
       <screen x="1440" y="23" width="2560" height="1337" />
     </state>
     <state x="2479" y="501" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.877/1440.23.2560.1337@1440.23.2560.1337" timestamp="1602709406925" />
-    <state x="1728" y="-309" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1605120913365">
+    <state x="1728" y="-453" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1605381553157">
       <screen x="1440" y="-479" width="2560" height="1417" />
     </state>
-    <state x="1728" y="-309" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1440.797/1440.-479.2560.1417/4000.-381.1920.1057@1440.-479.2560.1417" timestamp="1605120913365" />
+    <state x="1728" y="-453" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1440.797/1440.-479.2560.1417/4000.-381.1920.1057@1440.-479.2560.1417" timestamp="1605381553157" />
     <state x="216" y="150" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1920.1057@0.23.1920.1057" timestamp="1600119683930" />
-    <state x="1732" y="-90" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605050123554">
+    <state x="1732" y="-90" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605385987065">
       <screen x="1440" y="-479" width="2560" height="1417" />
     </state>
-    <state x="1732" y="-90" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1440.797/1440.-479.2560.1417/4000.-381.1920.1057@1440.-479.2560.1417" timestamp="1605050123554" />
+    <state x="1732" y="-90" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1440.797/1440.-479.2560.1417/4000.-381.1920.1057@1440.-479.2560.1417" timestamp="1605385987065" />
     <state x="219" y="313" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1920.1057@0.23.1920.1057" timestamp="1600117830084" />
     <state x="145" y="268" key="NewPhpClassDialog" timestamp="1600119291866">
       <screen x="0" y="23" width="1920" height="1057" />
@@ -252,18 +283,19 @@
       <screen x="1440" y="23" width="2560" height="1337" />
     </state>
     <state x="1856" y="329" key="SettingsEditor/0.23.1440.877/1440.23.2560.1337@1440.23.2560.1337" timestamp="1602704711522" />
-    <state x="2427" y="-160" width="586" height="779" key="find.popup" timestamp="1605046950600">
+    <state x="2427" y="-160" width="586" height="779" key="find.popup" timestamp="1605377176262">
       <screen x="1440" y="-479" width="2560" height="1417" />
     </state>
-    <state x="2427" y="-160" width="586" height="779" key="find.popup/0.23.1440.797/1440.-479.2560.1417/4000.-381.1920.1057@1440.-479.2560.1417" timestamp="1605046950600" />
+    <state x="2427" y="-160" width="586" height="779" key="find.popup/0.23.1440.797/1440.-479.2560.1417/4000.-381.1920.1057@1440.-479.2560.1417" timestamp="1605377176262" />
     <state x="2427" y="-290" width="586" height="779" key="find.popup/0.23.1440.797/1440.-609.2560.1417@1440.-609.2560.1417" timestamp="1602788201477" />
     <state x="2427" y="324" width="586" height="735" key="find.popup/0.23.1440.877/1440.23.2560.1337@1440.23.2560.1337" timestamp="1602710941549" />
-    <state x="1635" y="-164" width="894" height="907" key="search.everywhere.popup" timestamp="1605124551358">
+    <state x="1635" y="-164" width="894" height="907" key="search.everywhere.popup" timestamp="1605385858615">
       <screen x="1440" y="-479" width="2560" height="1417" />
     </state>
-    <state x="1635" y="-164" width="894" height="907" key="search.everywhere.popup/0.23.1440.797/1440.-479.2560.1417/4000.-381.1920.1057@1440.-479.2560.1417" timestamp="1605124551358" />
+    <state x="1635" y="-164" width="894" height="907" key="search.everywhere.popup/0.23.1440.797/1440.-479.2560.1417/4000.-381.1920.1057@1440.-479.2560.1417" timestamp="1605385858615" />
     <state x="1635" y="-294" width="894" height="907" key="search.everywhere.popup/0.23.1440.797/1440.-609.2560.1417@1440.-609.2560.1417" timestamp="1602783155888" />
     <state x="1635" y="-182" width="894" height="856" key="search.everywhere.popup/0.23.1440.877/1440.-479.2560.1337/4000.-381.1920.1057@1440.-479.2560.1337" timestamp="1604966302729" />
+    <state x="1635" y="-164" width="894" height="907" key="search.everywhere.popup/0.23.1440.877/1440.-479.2560.1417/4000.-381.1920.977@1440.-479.2560.1417" timestamp="1605384251887" />
     <state x="146" y="258" width="670" height="676" key="search.everywhere.popup/0.23.1920.1057@0.23.1920.1057" timestamp="1600118742211" />
   </component>
 </project>

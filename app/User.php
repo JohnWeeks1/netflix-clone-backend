@@ -46,4 +46,16 @@ class User extends Authenticatable
     {
         return $this->hasMany(Rating::class);
     }
+
+    /**
+     * Route for Slack notifications.
+     *
+     * @param $notification
+     *
+     * @return mixed
+     */
+    public function routeNotificationForSlack($notification)
+    {
+        return env('SLACK_NOTIFICATION_WEBHOOK');
+    }
 }

@@ -8,6 +8,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Responses\SuccessResponse;
 use App\Http\Requests\Auth\LoginRequest;
 use App\Http\Requests\Auth\RegisterRequest;
+use App\Notifications\Slack\UserRegisteredSlackNotification;
 
 class AuthController extends Controller
 {
@@ -60,15 +61,20 @@ class AuthController extends Controller
 
     /**
      * Register new user.
+     * Send welcome email.
+     * Send notification to Slack.
      *
      * @param RegisterRequest $request
      *
      * @return SuccessResponse
+     *
+     * @throws \Exception
      */
     public function register(RegisterRequest $request): SuccessResponse
     {
         $user = $this->userService->createUser($request);
         $this->mailService->welcomeNewUser($user);
+        $user->notify(new UserRegisteredSlackNotification($user));
 
         return new SuccessResponse('User created!');
     }

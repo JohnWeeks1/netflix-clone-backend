@@ -33,11 +33,19 @@ class PaymentController extends Controller
         $paymentMethod = $request->get('payment_method');
         $plan = Plan::findOrFail(env('DEFAULT_PLAN_ID'));
 
+        if (!$plan) {
+            abort(500, 'Error getting plan');
+        }
+
         $user->newSubscription('monthly_subscription', $plan->stripe_id)->create($paymentMethod);
 
         $user->isSubscribed = 1;
-        $user->save();
+        $saved = $user->save();
 
-        return new SuccessResponse('User with id: ' . $user->id . ' is subscribed');
+        if (!$saved) {
+            abort(500, 'Error saving subscription');
+        }
+
+        return new SuccessResponse('User with id: ' . $user->id . ' is subscribed!');
     }
 }
