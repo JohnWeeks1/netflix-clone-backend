@@ -4,14 +4,14 @@ namespace App\Jobs\User;
 
 use App\User;
 use Illuminate\Bus\Queueable;
-use App\Mail\User\UserInvoiceEmail;
+use App\Mail\User\UserReceiptEmail;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
-class UserInvoiceSendJob implements ShouldQueue
+class UserReceiptJob implements ShouldQueue
 {
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
 
@@ -23,7 +23,7 @@ class UserInvoiceSendJob implements ShouldQueue
     public $user;
 
     /**
-     * UserWelcomeEmailJob constructor.
+     * UserReceiptJob constructor.
      *
      * @param $user
      *
@@ -42,6 +42,6 @@ class UserInvoiceSendJob implements ShouldQueue
     public function handle()
     {
         Mail::to($this->user->email)
-            ->send(new UserInvoiceEmail($this->user));
+            ->send(new UserReceiptEmail($this->user));
     }
 }

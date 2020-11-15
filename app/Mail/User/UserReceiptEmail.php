@@ -6,7 +6,7 @@ use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class UserInvoiceEmail extends Mailable
+class UserReceiptEmail extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -35,7 +35,9 @@ class UserInvoiceEmail extends Mailable
     public function build()
     {
         return $this->from('johnflix@mail.com')
-            ->view('emails.user.user_invoice')
-            ->with(['user' => $this->user]);
+            ->view('emails.user.user_invoice', [
+                'currentDate' => now()->toDateString(),
+                'user'        => $this->user
+            ]);
     }
 }

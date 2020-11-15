@@ -2,6 +2,7 @@
 
 namespace App\Mail\User;
 
+use App\User;
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
@@ -20,9 +21,9 @@ class WelcomeEmailAfterRegistration extends Mailable
     /**
      * WelcomeAfterRegistration constructor.
      *
-     * @param $user
+     * @param User $user
      */
-    public function __construct($user)
+    public function __construct(User $user)
     {
         $this->user = $user;
     }

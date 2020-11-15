@@ -58,4 +58,9 @@ class User extends Authenticatable
     {
         return env('SLACK_NOTIFICATION_WEBHOOK');
     }
+
+    public function subscription()
+    {
+        return $this->hasOne(Subscription::class);
+    }
 }

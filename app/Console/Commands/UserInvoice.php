@@ -3,8 +3,9 @@
 namespace App\Console\Commands;
 
 use App\User;
+use Carbon\Carbon;
 use Illuminate\Console\Command;
-use App\Jobs\User\UserInvoiceSendJob;
+use App\Jobs\User\UserReceiptJob;
 
 class UserInvoice extends Command
 {
@@ -34,13 +35,15 @@ class UserInvoice extends Command
 
     /**
      * Execute the console command.
+     *
+     * @return void
      */
-    public function handle()
+    public function handle(): void
     {
         $user_id = $this->argument('user_id');
         $user = User::find($user_id);
 
-        dispatch(new UserInvoiceSendJob($user))
+        dispatch(new UserReceiptJob($user))
             ->onQueue('emails')
             ->delay(now()->addSeconds(5));
 

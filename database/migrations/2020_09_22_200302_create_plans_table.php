@@ -17,6 +17,7 @@ class CreatePlansTable extends Migration
             $table->id();
             $table->string('title');
             $table->string('identifier')->unique;
+            $table->float('price');
             $table->string('stripe_id')->unique;
             $table->timestamps();
         });

@@ -108,7 +108,7 @@
         .invoice-footer {
             flex: 1;
             display: flex;
-            justify-content: flex-end;
+            justify-content: flex-start;
             align-items: center;
         }
 
@@ -145,10 +145,8 @@
     <div class="invoice-title">
         <div id="main-title">
             <h4>RECEIPT</h4>
-            <span>#89 292</span>
+            <span>{{$currentDate}}</span>
         </div>
-
-        <span id="date">16/02/2019</span>
     </div>
 
     <div class="invoice-details">
@@ -156,24 +154,21 @@
             <thead>
             <tr>
                 <td>PRODUCT</td>
-                <td>DURATION</td>
                 <td>PRICE</td>
             </tr>
             </thead>
 
             <tbody>
             <tr class="row-data">
-                <td>{{$user}}</td>
-{{--                <td id="unit">1</td>--}}
-{{--                <td>2.90</td>--}}
+                <td>{{$user->subscription->plan->title}}</td>
+                <td>£{{$user->subscription->plan->price}}</td>
             </tr>
             </tbody>
         </table>
     </div>
 
     <div class="invoice-footer">
-        <button class="btn btn-secondary" id="later">LATER</button>
-        <button class="btn btn-primary">PAY NOW</button>
+        <p>Thanks!</p>
     </div>
 </div>
 </body>
